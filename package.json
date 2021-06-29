@@ -1,6 +1,6 @@
 {
   "name": "better-substring",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Improved substring method to avoid splitting mid word",
   "type": "module",
   "source": "src/index.ts",
