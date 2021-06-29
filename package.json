@@ -3,10 +3,7 @@
   "version": "1.0.2",
   "description": "Improved substring method to avoid splitting mid word",
   "source": "src/index.ts",
-    "exports": {
-    "require": "./dist/index.js",
-    "default": "./dist/index.modern.mjs"
-  },
+  "exports": "./dist/index.modern.js",
   "main": "./dist/index.js",
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
