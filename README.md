@@ -65,7 +65,7 @@ Returns a substring without splitting words.
 
 - `sentence: string` the sentence/string to work with. 
 - `init: string` index where to start the substring. 0 to start from the beginning. 
-- `initForward: string` (optional) in case the split will occur mid-word, shall we go forward (true) or back (false)?. 
+- `initForward = false` (optional) in case the split will occur mid-word, shall we go forward (true) or back (false)?. 
 - `end: number` (optional) index where you want the split to occur. 
 - `endForward = true` (optional) in case the split will occur mid-word, shall we go forward (true) or back (false)?. 
 
