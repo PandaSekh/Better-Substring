@@ -8,7 +8,7 @@
 </p>
 <p align="center">✂ Improved substring method to avoid splitting mid word</p>
 
-better-substring is a *lightweight* (**~150 bytes**) tool that enhances the default substring method. No more words split in half!
+better-substring is a *lightweight* (**~180 bytes**) tool that enhances the default substring method. No more words split in half!
 
 * * *
 
