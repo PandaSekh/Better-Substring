@@ -1,8 +1,15 @@
-export default function sub(s: string, n: number, nextWord = true) {
-  while (_isAlphaNumeric(s.charCodeAt(n))) {
-    nextWord ? n++ : n--;
+export default function sub(sentence: string, init: number, initForward = false, end?: number, endForward = true): string {
+  if (init > 0) {
+    while (_isAlphaNumeric(sentence.charCodeAt(init))) {
+      initForward ? init++ : init--;
+    }
   }
-  return s.substring(0, n);
+  if (end) {
+    while (_isAlphaNumeric(sentence.charCodeAt(end))) {
+      endForward ? end++ : end--;
+    }
+  }
+  return sentence.substring(init, end).trim();
 }
 
 function _isAlphaNumeric(_charCode: number) {

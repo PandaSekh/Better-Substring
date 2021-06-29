@@ -31,7 +31,7 @@ import betterSubstring from "better-substring";
 
 const sentence = "Hello World :D";
 
-const subs = betterSubstring(sentence, 3, true);
+const subs = betterSubstring(sentence, 0, false, 3, true);
 
 console.log(subs); // "Hello"
 ```
@@ -42,29 +42,32 @@ import betterSubstring from "better-substring";
 
 const sentence = "Hello World :D";
 
-const subs = betterSubstring(sentence, 8, false);
+const subs = betterSubstring(sentence, 0, false, 8, false);
 
 console.log(subs); // "Hello"
 ```
 
-
-## API
-### `substring(sentence: string, end: number, forward = true)`
+We can also define a starting point
 ```js
 import betterSubstring from "better-substring";
 
 const sentence = "Hello World :D";
 
-const subs = betterSubstring(sentence, 3, true);
+const subs = betterSubstring(sentence, 6, true, 8, true);
 
-console.log(subs); // Hello
+console.log(subs); // "World"
 ```
+
+## API
+### `substring(sentence: string, init: number, initForward = false, end?: number, endForward = true) => string`
 
 Returns a substring without splitting words.
 
 - `sentence: string` the sentence/string to work with. 
-- `end: number` index where you want the split to occur. 
-- `forward = true` in case the split will occur mid-word, do you want to keep going forward (true) or go back (false)?. 
+- `init: string` index where to start the substring. 0 to start from the beginning. 
+- `initForward: string` (optional) in case the split will occur mid-word, shall we go forward (true) or back (false)?. 
+- `end: number` (optional) index where you want the split to occur. 
+- `endForward = true` (optional) in case the split will occur mid-word, shall we go forward (true) or back (false)?. 
 
 ## License
 
